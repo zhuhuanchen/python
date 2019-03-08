@@ -1,0 +1,9 @@
+
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+ 
+for i in range(1,5):    #注意记住range()的用法.包括前面的1但是不包括后面的5
+    for j in range(1,5):
+        for k in range(1,5):
+            if( i != k ) and (i != j) and (j != k):
+                print (i,j,k)  #注意python3之后的print必须带括号了
