@@ -1,0 +1,33 @@
+class Students:
+    # 构造方法
+    # def __init__(self, name):
+    #     self.name = name
+
+    def __init__(self, name):
+        self.name = name
+
+
+
+    # 实例方法
+    def study(self, examination_results):
+        self.examination_results = examination_results
+        print("同学{}的考试分数是{}".format(self.name, self.examination_results))
+        print("该实例对象的地址是{}".format(self))
+
+studend_a = Students('studend_a')
+print(studend_a.name)
+
+studend_b = Students('studend_b')
+print(studend_b.name)
+
+studend_a = Students('studend_a')
+studend_a.study(80);
+
+#print(studend_a.study(80))
+
+studend_b = Students('studend_b')
+print(studend_b.study(80))
+
+print(studend_b)
+
+
